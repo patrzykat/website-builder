@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Minamalist Website</title>
+    <script>
+      /* Personalize Constants Below */
+      const businessName = "Business Inc.";
+      const businessDesc = "A really good business";
+      const heroURL = "https://www.hostingadvice.com/wp-content/uploads/2016/08/freehosting3.jpg";
+    </script>
+  </head>
+  <body>
+    <div id="hero" class="container">
+      <h2 id="businessName" class="center-text"></h2>
+      <h4 id="businessDesc" class="center-text"></h4>
+      <img id="heroImage" width="800" class="center-img">
+    </div>
+    <div id="about">
+      <h2 class="center-text">About</h2>
+    </div>
+    <div id="grid">
+      <h2 class="center-text">Information Grid</h2>
+    </div>
+    <div id="contact">
+      <h2 class="center-text">Contact</h2>
+    </div>
+
+    <script>
+      /* Insert constants into file here */
+      const businessNameElement = document.getElementById("businessName");
+      businessNameElement.innerText = businessName;
+      const businessDescElement = document.getElementById("businessDesc");
+      businessDescElement.innerText = businessDesc;
+      const heroImage = document.getElementById("heroImage");
+      heroImage.src = heroURL;
+    </script>
+  </body>
+</html>
